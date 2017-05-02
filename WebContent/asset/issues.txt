@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/1858463/java-error-only-a-type-can-be-imported-xyz-resolves-to-a-package

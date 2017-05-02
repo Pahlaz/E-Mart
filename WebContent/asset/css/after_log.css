@@ -1,0 +1,43 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Fira Code';
+}
+a{
+  text-decoration: none;
+}
+
+/*Front Section*/
+.front{
+	position: relative;
+	height: 600px;
+	background-image: -webkit-linear-gradient(top right, #F9F8F8 0%, #161718 100%); 
+	background-image: linear-gradient(to bottom left, #F9F8F8 0%, #161718 100%);
+	background-attachment: fixed;
+}
+.front a{
+	padding: 10px;
+	position: absolute;
+	font-size: 32px;
+	top: 17%;
+	left: 50%;
+	border: 2px solid #F9F8F8;
+	margin-left: -271px;
+	color: #F9F8F8;
+	cursor: pointer;
+  	transition: background .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.front a:hover{
+	background: rgba(255, 255, 255, 0.4);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6);
+}
+.front .image{
+	position: absolute;
+	background: url('../img/bag.png');
+	background-size: cover;
+    height: 442px;
+    width: 773px;
+    bottom: -70px;
+    left: 50%;
+    margin-left: -386px;
+}

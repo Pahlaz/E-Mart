@@ -1,0 +1,6 @@
+# Mysql
+
+create database emart;
+use emart;
+
+create table users (uname varchar(20),email varchar(30), pass varchar(20));

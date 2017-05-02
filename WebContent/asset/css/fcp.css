@@ -1,0 +1,88 @@
+/* Product Section */
+.product{
+	padding-top: 20px;
+	padding-left: 50px;
+	display: flex;
+}
+.product img{
+	width: 300px;
+	height: 400px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Fira Code';
+	font-weight: 300;
+}
+a{
+	text-decoration: none;
+}
+
+/* Header Section */
+.logo{
+	margin-bottom: 20px;
+}
+.logo img{
+	width: 150px;
+	height: 60px;
+}
+header{
+	padding: 20px;
+	background:  #15c26b;
+}
+nav{
+	padding: 20px;
+	font-size: 24px;
+}
+nav a{
+	color: white;
+}
+nav ul{
+	height: 30px;
+}
+nav li{
+	padding: 5px 20px;
+	display: inline;
+	list-style: none;
+	transition: all .3s linear;
+}
+nav li:hover{
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 5px;
+}
+hr{
+	margin: 0px auto;
+	width: 90%;
+	border: 1px solid white;
+}
+
+/* Search Bar Section */
+.search{
+	position: absolute;
+	right: 20px;
+	top: 35px;
+	display: flex;
+	height: 40px;
+}
+.search img{
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+.search input[type='search']{
+	text-align: center;
+	font-size: 24px;
+	padding: 10px;
+	width: 250px;
+	border: 1px solid black;
+	box-sizing: border-box;
+	height: 40px;
+}
+
+.compare{
+	margin: 50px;
+	width: calc(100%)-50px;
+	border: 1px solid black;
+}

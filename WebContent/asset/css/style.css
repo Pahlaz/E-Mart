@@ -1,0 +1,291 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Fira Code';
+}
+a{
+  text-decoration: none;
+}
+
+/*Front Section*/
+.front{
+	position: relative;
+	height: 600px;
+	background-image: -webkit-linear-gradient(top right, #F9F8F8 0%, #161718 100%); 
+	background-image: linear-gradient(to bottom left, #F9F8F8 0%, #161718 100%);
+	background-attachment: fixed;
+}
+.front a{
+	padding: 10px;
+	position: absolute;
+	font-size: 32px;
+	top: 17%;
+	left: 50%;
+	border: 2px solid #F9F8F8;
+	margin-left: -150px;
+	color: #F9F8F8;
+	cursor: pointer;
+  	transition: background .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.front a:hover{
+	background: rgba(255, 255, 255, 0.4);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6);
+}
+.front .image{
+	position: absolute;
+	background: url('../img/bag.png');
+	background-size: cover;
+    height: 442px;
+    width: 773px;
+    bottom: -70px;
+    left: 50%;
+    margin-left: -386px;
+}
+
+
+/*Content  Section*/
+.block{
+	padding: 60px 0px;
+	background: #EFEFEF;
+	color: #252525;
+}
+.change{
+	background: white;
+	color: #2E3740;
+}
+.details{
+  padding: 35px;
+}
+
+/* Info */
+.info{
+	max-width: 800px;
+	margin: 0px auto;
+}
+.info h1{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.info p{
+	color: royalblue;
+	margin-top: 10px;
+	font-size: 20px;
+	padding: 10px;
+}
+.info hr{
+	width: 50%;
+	margin: 0px auto;
+}
+
+/* Periscope */
+.periscope{
+	background: url("../img/model2.jpg") no-repeat;
+	background-position: center 0px;
+	margin: 50px auto;
+	background-attachment: fixed;
+	width: 640px;
+	height: 640px;
+	border-radius: 50%;
+}
+
+
+/*Contact Section*/
+.contact{
+	background: #2E3740;
+	color: #6D7781;
+	font-size: 16px;
+}
+.contact input, textarea{
+    width: 500px;
+    padding: 20px 0px;
+}
+.contact input[type="text"], input[type="email"] {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #435160;
+    outline: none;
+    color: #435160;
+}
+.contact textarea{
+	height: 120px;
+	background: #2E3740;
+  border: 1px solid #435160;
+}
+.contact input[type="text"]:focus,.contact input[type="email"]:focus{
+  border-bottom: 1px solid #02b3e4;
+}
+contact textarea:hover{
+  border: 1px solid #02b3e4;
+}
+.contact input[type="submit"]{
+	color: white;	
+	padding: 5px;
+	width: 200px;
+	height: 50px;
+	background: #1FCE6D;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+}
+.contact input[type="submit"]:hover{
+	animation-name: shake;
+	background: #16aa56;
+}
+/* About Us Section */
+.about{
+  padding: 60px;
+}
+.about img{
+	width: 150px;
+	height: 150px;
+	margin-right: 20px;
+	border-radius: 10px;
+  	transition: opacity .3s linear;
+}
+.about img:hover{
+  	opacity: .8;
+}
+.team{
+	display: inline-block;
+	margin-right:50px;
+}
+.desc{
+	padding:10px;
+	background:#F1F1F1;
+}
+
+/* Footer Section */
+footer{
+	padding: 50px;
+	height: 20px;
+	background: #424242;
+	color: #6D7781;
+}
+footer a{
+	color: #6D7781;
+}
+footer a:hover{
+	text-decoration:underline;
+	color: #A3B9D0;
+}
+:-moz-placeholder {
+  color: #6D7781;
+  font-weight: 300;
+}
+
+::-moz-placeholder {
+  color: #6D7781;
+  opacity: 1;
+  font-weight: 300;
+}
+
+::-webkit-input-placeholder {
+  color: #6D7781;
+  font-weight: 300;
+}
+
+:-ms-input-placeholder {
+  color: #6D7781;
+  font-weight: 300;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
+/* Error Module */
+.error{
+	padding:30px 0px 30px 40px;
+}
+
+.error h1, .error h2, .error h3, .error .icons{
+	padding-bottom:10px
+}
+.error h1{
+	color: tomato;
+}
+.error h3 a{
+	border-bottom: 2px solid #FEB415;
+}
+.error h3 a:hover{
+	color: #FEB415;
+	border-bottom: 2px solid black;
+}.error .icons img{
+	margin-right: 10px;
+}
+
+.share{
+	padding: 60px;
+}
+.share img{
+	height:40px;
+	transition: transform .3s ease-in-out;
+}
+.share img:hover{
+	opacity: .8;
+	transform: scale(1.3,1.3);
+}
+
+/* Slider */
+.slider{
+	padding: 0px 50px 0px 50px;
+	position: relative; 
+	height: 250px;
+	display: inline-block;
+	overflow: hidden;
+	margin: 5px;
+}
+.slider .left{
+	left: 0px;
+}
+.slider .right{
+	right: 0px;
+}
+.slider .left, .slider .right{
+	position: absolute;
+	width: 50px;
+	height: inherit;
+	cursor: pointer;
+}
+.slider a img{
+	width: 290px;
+	box-sizing:border-box;
+}
+.left, .right{
+	z-index: 1;
+}
+.left img, .right img{
+	position:relative;
+    top: 100px;
+    width:50px;
+}
+.left img:hover, .right img:hover{
+	background: white;
+	border-radius:51px;
+}
+.item{
+	width: 290px;
+	height:250px;
+	padding: 10px;
+	float: left;
+	box-sizing: border-box;
+	background-attachment: fixed;
+	opacity:0;
+	transition: transform .3s ease-in-out;
+}
+.item:hover{
+	transform: scale(1.05);
+}
+.item img{ 
+	width: 194px;
+	height: 220px;
+}
+.item a{
+	display: flex;
+}
+
+
+
+
